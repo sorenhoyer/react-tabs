@@ -6,7 +6,9 @@
     "node": ">=12"
   },
   "description": "",
-  "main": ".prettierrc.js",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "types": "dist/main/index.d.ts",
   "scripts": {
     "build-main": "yarn tsc",
     "build-module": "yarn tsc -p tsconfig.module.json",
