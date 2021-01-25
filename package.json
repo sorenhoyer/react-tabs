@@ -1,0 +1,58 @@
+{
+  "name": "@sorenhoyer/react-tabs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "description": "",
+  "main": ".prettierrc.js",
+  "scripts": {
+    "build-main": "yarn tsc",
+    "build-module": "yarn tsc -p tsconfig.module.json",
+    "build": "rimraf dist && yarn build-main && yarn build-module",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint-fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorenhoyer/react-tabs.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/sorenhoyer/react-tabs/issues"
+  },
+  "homepage": "https://github.com/sorenhoyer/react-tabs#readme",
+  "devDependencies": {
+    "@sorenhoyer/eslint-config-react": "^1.1.1",
+    "@sorenhoyer/eslint-config-relay": "^1.0.0",
+    "@sorenhoyer/prettier-config": "^1.1.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-relay": "^1.8.1",
+    "husky": "^5.0.0-alpha.6",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-merge-refs": "^1.1.0",
+    "react-use-measure": "^2.0.3"
+  }
+}
